@@ -1,0 +1,24 @@
+{
+  "name": "@dc/resize-photo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/lambda.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.540.0",
+    "@dc/database": "workspace:*",
+    "aws-lambda": "^1.0.7",
+    "sharp": "^0.33.3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.137",
+    "@types/node": "^20.11.30",
+    "@types/sharp": "^0.32.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  }
+}
