@@ -6,5 +6,5 @@ variable "db_url" {
 }
 variable "env" {
   type    = string
-  default = "DEV"
+  default = "SANDBOX"
 }
