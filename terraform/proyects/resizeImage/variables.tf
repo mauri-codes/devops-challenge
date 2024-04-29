@@ -5,6 +5,6 @@ variable "db_url" {
   type = string
 }
 variable "env" {
-  type = string
+  type    = string
   default = "DEV"
 }

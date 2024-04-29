@@ -10,8 +10,8 @@ data "aws_iam_policy_document" "assume_role" {
 }
 
 resource "aws_iam_role" "lambda_role" {
-  name                = "${var.function_name}FunctionRole"
-  assume_role_policy  = data.aws_iam_policy_document.assume_role.json
+  name               = "${var.function_name}FunctionRole"
+  assume_role_policy = data.aws_iam_policy_document.assume_role.json
   managed_policy_arns = concat([
     aws_iam_policy.lambda_logs.arn
   ], try(var.extra_policy_arns, []))
